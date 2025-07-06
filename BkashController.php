@@ -32,7 +32,7 @@ class BkashController extends Controller
             'intent' => 'sale',
             'payerReference' => $payerReference,
             'merchantInvoiceNumber' => 'commonPayment001',
-            'callbackURL' => route('bkash.status')
+            'callbackURL' => route('bkash.execute')
         ];
 
         $response = Http::withHeaders([
